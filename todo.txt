@@ -1,9 +1,2 @@
 # to-do-list
 
-finish patterns and read the complete list of data
-
-finish get_header
-
-finish write data to csv file
-
-
