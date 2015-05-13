@@ -12,6 +12,8 @@ def main():
 
     try:
         with open(input_zipcode_file, 'r') as zipcode_file:
+            #write header
+            csv_writer.writerow(city_data.get_header_row())
             for item in zipcode_file:
                 zipcode = item.rstrip()
                 print('reading data for zipcode: ', zipcode)
