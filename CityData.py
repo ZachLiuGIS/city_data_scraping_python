@@ -59,7 +59,7 @@ class CityData:
             print(url)
             request = Request(url, headers=self.headers)
             response = urlopen(request)
-            return response.read().decode('utf-8')
+            return response.read().decode('utf-8', 'ignore')
         except URLError as e:
             if hasattr(e, "reason"):
                 print("Fail to connect to page, reason: ", e.reason)

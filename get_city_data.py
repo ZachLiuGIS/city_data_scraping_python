@@ -3,8 +3,8 @@ from CityData import CityData
 
 def main():
     city_data = CityData()
-    input_zipcode_file = 'zipcode.txt'
-    output_csv_file = 'city_data.csv'
+    input_zipcode_file = 'atlanta_zipcode.txt'
+    output_csv_file = 'atlanta_zipcode_city_data.csv'
     o_file_csv = open(output_csv_file, 'w', newline='')
     csv_writer = csv.writer(o_file_csv)
 
